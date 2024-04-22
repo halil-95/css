@@ -1,15 +1,15 @@
 # animations
 * all propertions
-    * @keyframes
-    * animation-name
-    * animation-duration
-    * animation-delay
-    * animation-iteration-count
-    * animation-direction
-    * animation-timing-function
-    * animation-fill-mode
-    * animation
-## Правило @keyframes
+    * [@keyframes](#keyframes)
+    * [animation-name](#animation-name)
+    * [animation-duration](#animation-duration)
+    * [animation-delay](#animation-delay)
+    * [animation-iteration-count](#animation-iteration-count)
+    * [animation-direction](#animation-direction)
+    * [animation-timing-function](#animation-timing-function)
+    * [animation-fill-mode](#animation-fill-mode)
+    * [animation](#animation)
+## Правило <a id="keyframes">@keyframes</a>
 Когда вы указываете стили CSS внутри @keyframes правила, анимация в определенные моменты будет постепенно меняться с текущего стиля на новый.
 
 Чтобы анимация работала, вы должны привязать анимацию к элементу.
@@ -33,7 +33,8 @@ div {
 }
 ```
 [ try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1)
-## Свойство animation-duration определяет
+## Свойство <a id="animation-duration">animation-duration</a> определяет
+
 
 сколько времени потребуется для завершения анимации. Если animation-durationсвойство не указано, анимации не будет, поскольку значение по умолчанию — 0 с (0 секунд). 
 
@@ -88,7 +89,8 @@ div {
 ```
 [try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation3)
 
-## animation-delay определяет задержку начала анимации.
+## <a id="определяет задержку">animation-delay</a>  начала анимации.
+
 В следующем примере перед запуском анимации имеется задержка в 2 секунды:
 ```css
 div {
@@ -118,7 +120,7 @@ div {
 ```
 [try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_delay2)
 
-## animation-iteration-count определяет количество раз, которое должна запускаться анимация.
+## <a id="animation-iteration-count">animation-iteration-count</a> определяет количество раз, которое должна запускаться анимация.
 
 ```css
 div {
@@ -149,9 +151,9 @@ div {
 ```
 [try it ](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_count2)
 
-## animation-direction определяет, должна ли анимация воспроизводиться вперед, назад или поочередно.
+##    <a id="animation-direction">animation-direction</a> определяет, должна ли анимация воспроизводиться вперед, назад или поочередно.
 Свойство анимации-направления может иметь следующие значения:
-   
+
 * __normal__- Анимация воспроизводится как обычно (вперед). Это значение по умолчанию
 * __reverse__- Анимация воспроизводится в обратном направлении (назад)
 * __alternate__ - Анимация воспроизводится сначала вперед, затем назад
@@ -205,7 +207,7 @@ div {
 ```
 [try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_direction3)
 
-## animation-timing-function определяет кривую скорости анимации.
+## <a id="animation-timing-function">animation-timing-function</a>  определяет кривую скорости анимации.
 
 * Свойство анимации-тайминг-функции может иметь следующие значения:
 
@@ -227,7 +229,7 @@ div {
 [try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_speed)
 
 
-## animation-fill-mode определяет стиль целевого элемента, когда анимация не воспроизводится (до ее начала, после ее окончания или и то, и другое).
+## <a id="animation-fill-mode">animation-fill-mode</a> определяет стиль целевого элемента, когда анимация не воспроизводится (до ее начала, после ее окончания или и то, и другое).
 
 CSS-анимация не влияет на элемент до воспроизведения первого ключевого кадра или после воспроизведения последнего ключевого кадра. Свойство __animation-fill-mode__ может переопределить это поведение.
 
