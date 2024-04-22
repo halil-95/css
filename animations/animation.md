@@ -226,3 +226,98 @@ div {
 ```
 [try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_speed)
 
+
+## animation-fill-mode определяет стиль целевого элемента, когда анимация не воспроизводится (до ее начала, после ее окончания или и то, и другое).
+
+CSS-анимация не влияет на элемент до воспроизведения первого ключевого кадра или после воспроизведения последнего ключевого кадра. Свойство __animation-fill-mode__ может переопределить это поведение.
+
+Свойство animation-fill-modeопределяет стиль целевого элемента, когда анимация не воспроизводится (до ее начала, после ее окончания или и то, и другое).
+
+* Свойство анимации-fill-mode может иметь следующие значения:
+
+    * none- Значение по умолчанию. Анимация не будет применять стили к элементу до или после его выполнения.
+    * forwards- Элемент сохранит значения стиля, заданные последним ключевым кадром (зависит от направления анимации и количества итераций анимации).
+    * backwards- Элемент получит значения стиля, заданные первым ключевым кадром (в зависимости от направления анимации), и сохранит их в течение периода задержки анимации.
+    * both- Анимация будет следовать правилам как вперед, так и назад, расширяя свойства анимации в обоих направлениях.
+
+В следующем примере элемент <div> сохраняет значения стиля из последнего ключевого кадра после завершения анимации:
+
+```css
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+```
+[try it ](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_fill-mode)
+
+В следующем примере элемент <div> получает значения стиля, установленные первым ключевым кадром перед началом анимации (во время периода задержки анимации):
+
+```css
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+```
+[try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_fill-mode2)
+
+В следующем примере элемент <div> получает значения стиля, установленные первым ключевым кадром перед началом анимации, и сохраняет значения стиля из последнего ключевого кадра, когда анимация заканчивается:
+
+```css
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+```
+[try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_fill-mode3)
+
+Сокращенное свойство анимации
+В приведенном ниже примере используются шесть свойств анимации:
+
+```css
+div {
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+```
+[try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation4)
+
+Тот же эффект анимации, что и выше, может быть достигнут с помощью сокращенного animationсвойства:
+
+```css
+div {
+  animation: example 5s linear 2s infinite alternate;
+}
+```
+[try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation5)
+
+* [@__keyframes__](https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp)	Specifies the animation code
+* [__animation__](https://www.w3schools.com/cssref/css3_pr_animation.asp)	A shorthand property for setting all the animation properties
+* [__animation-delay__](https://www.w3schools.com/cssref/css3_pr_animation-delay.asp)	Specifies a delay for the start of an animation
+* [__animation-direction__](https://www.w3schools.com/cssref/css3_pr_animation-direction.asp)	Specifies whether an animation should be played forwards, backwards or in alternate cycles
+* [__animation-duration__](https://www.w3schools.com/cssref/css3_pr_animation-duration.asp)	Specifies how long time an animation should take to complete one cycle
+* [__animation-fill-mode__](https://www.w3schools.com/cssref/css3_pr_animation-fill-mode.asp)	Specifies a style for the element when the animation is not playing (before it starts, after it ends, or both)
+* [__animation-iteration-count__](https://www.w3schools.com/cssref/css3_pr_animation-iteration-count.asp)	Specifies the number of times an animation should be played
+* [__animation-name__](https://www.w3schools.com/cssref/css3_pr_animation-name.asp)	Specifies the name of the @keyframes animation
+* [__animation-play-state__](https://www.w3schools.com/cssref/css3_pr_animation-play-state.asp)	Specifies whether the animation is running or paused
+* [__animation-timing-function__](https://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp) Specifies the speed curve of the animation
