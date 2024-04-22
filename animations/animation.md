@@ -132,3 +132,19 @@ div {
 }
 ```
 [try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_count)
+
+## В следующем примере используется значение «бесконечно», чтобы анимация продолжалась вечно:
+
+```css
+
+div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+```
+[try it ](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_count2)
