@@ -32,7 +32,7 @@ div {
   animation-duration: 4s;
 }
 ```
-[ try ir]('https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1)
+[ try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation1)
 ## Свойство animation-duration определяет
 
 сколько времени потребуется для завершения анимации. Если animation-durationсвойство не указано, анимации не будет, поскольку значение по умолчанию — 0 с (0 секунд). 
