@@ -2,10 +2,10 @@
 * all propertions
     * [@keyframes](#keyframes)
     * [animation-name](#animation-name)
-    * [animation-duration](#animation-duration)
-    * [animation-delay](#animation-delay)
-    * [animation-iteration-count](#animation-iteration-count)
-    * [animation-direction](#animation-direction)
+    * [animation-duration](#animation-duration) продолжителбность
+    * [animation-delay](#animation-delay) осановка перед началом
+    * [animation-iteration-count](#animation-iteration-count) количество
+    * [animation-direction](#animation-direction) 
     * [animation-timing-function](#animation-timing-function)
     * [animation-fill-mode](#animation-fill-mode)
     * [animation](#animation)
