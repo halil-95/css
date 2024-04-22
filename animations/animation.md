@@ -62,3 +62,73 @@ div {
 }
 ```
 [try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation2)
+
+В следующем примере будет изменен как цвет фона, так и положение элемента <div>, когда анимация завершена на 25%, на 50% и снова, когда анимация завершена на 100%:
+
+```css
+/* The animation code */
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* The element to apply the animation to */
+div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+```
+[try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation3)
+
+## animation-delay определяет задержку начала анимации.
+В следующем примере перед запуском анимации имеется задержка в 2 секунды:
+```css
+div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+```
+[try it ](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_delay)
+Отрицательные значения также допускаются. При использовании отрицательных значений анимация начнется так, как если бы она уже воспроизводилась в течение N секунд.
+
+В следующем примере анимация начнется так, как если бы она уже воспроизводилась в течение 2 секунд:
+```css
+div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: -2s;
+}
+```
+[try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_delay2)
+
+## animation-iteration-count определяет количество раз, которое должна запускаться анимация.
+
+```css
+div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
+```
+[try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_count)
