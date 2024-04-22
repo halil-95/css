@@ -148,3 +148,81 @@ div {
 }
 ```
 [try it ](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_count2)
+
+## animation-direction определяет, должна ли анимация воспроизводиться вперед, назад или поочередно.
+Свойство анимации-направления может иметь следующие значения:
+   
+* __normal__- Анимация воспроизводится как обычно (вперед). Это значение по умолчанию
+* __reverse__- Анимация воспроизводится в обратном направлении (назад)
+* __alternate__ - Анимация воспроизводится сначала вперед, затем назад
+* __alternate-reverse__- Анимация воспроизводится сначала назад, затем вперед.
+
+В следующем примере анимация будет запущена в обратном направлении (назад):
+
+```css
+div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-direction: reverse;
+}
+```
+[try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_direction)
+
+В следующем примере используется значение «alternate», чтобы анимация сначала запускалась вперед, а затем назад:
+
+Пример
+```css
+div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+```
+[try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_direction2)
+
+В следующем примере используется значение «alternate-reverse», чтобы анимация сначала запускалась назад, а затем вперед:
+
+```css
+div {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 2;
+  animation-direction: alternate-reverse;
+}
+```
+[try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_direction3)
+
+## animation-timing-function определяет кривую скорости анимации.
+
+* Свойство анимации-тайминг-функции может иметь следующие значения:
+
+    * __ease__- Определяет анимацию с медленным началом, затем быстрым, затем медленным завершением (это значение по умолчанию)
+    * __linear__- Определяет анимацию с одинаковой скоростью от начала до конца
+    * __ease-in__- Задает анимацию с медленным стартом
+    * __ease-out__- Определяет анимацию с медленным концом
+    * __ease-in-out__- Определяет анимацию с медленным началом и концом
+    * cubic-bezier(n,n,n,n)- Позволяет определять собственные значения в функции кубической Безье.
+В следующем примере показаны некоторые из различных кривых скорости, которые можно использовать:
+
+```css
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+```
+[try it](https://www.w3schools.com/css/tryit.asp?filename=trycss3_animation_speed)
+
